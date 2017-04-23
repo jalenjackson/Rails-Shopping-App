@@ -1,1 +1,95 @@
-<h1>o</h1>
+<html>
+<head>
+  <title>Rails Shopping App</title>
+
+  <!-- Normalize HTML5 Reset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+
+  <!-- styles.css Link -->
+  <link rel="stylesheet" href="sass/styles.css">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">    <!-- Responsive Shizz -->
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0">
+</head>
+
+<body class="opac" >
+
+<div class="slick-codepen">
+
+  <img src ="https://images-na.ssl-images-amazon.com/images/G/01/dex/CFS/vxd-1055_ACQ_DLS_GW_Hero_v4_3000x600._CB530537227_.jpg">
+  <img src ="https://images-na.ssl-images-amazon.com/images/G/01/kindle/merch/2017/DOT/GW/multiPackUpdate/GW_3PK_DOT_3000x600_042017._CB529221208_.jpg">
+  <img src ="https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone7/gallery1/iphone7-gallery1-201703?wid=2136&hei=1286&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1489093012289">
+  <img src ="https://images-na.ssl-images-amazon.com/images/G/01/digital/music/merch/2017/Other/PrimeUpsell/Phase5/Amazon_GW_DesktopHero_PrimeUpsell5-Lifestyle-KOTH_3000x600._CB530180605_.jpg">
+
+</div>
+<div class="nav">
+  <div class ="wrapper">
+    <a href = "#">Popular</a>
+    <a href = "#">Recent</a>
+    <label for="search">Search</label>
+    <input id="search" type="search" placeholder="iphone 6+ ">
+  </div>
+</div>
+
+
+<ul class="resources">
+  <li>
+    <img src = "http://www.holidaysplease.co.uk/assets/images/17-85-japan%203.jpg-BasicCrop-size-500x500.jpg">
+    <div class="resource_info">
+      <h2>Example Resource</h2>
+      <a href="#" class="button">View</a>
+      <p class="price">$22</p>
+    </div>
+  </li>
+  <li>
+    <img src = "http://www.holidaysplease.co.uk/assets/images/17-85-japan%203.jpg-BasicCrop-size-500x500.jpg">
+  </li>
+  <li>
+    <img src = "http://www.holidaysplease.co.uk/assets/images/17-85-japan%203.jpg-BasicCrop-size-500x500.jpg">
+  </li>
+  <li>
+    <img src = "http://www.holidaysplease.co.uk/assets/images/17-85-japan%203.jpg-BasicCrop-size-500x500.jpg">
+  </li>
+  <li>
+    <img src = "http://www.holidaysplease.co.uk/assets/images/17-85-japan%203.jpg-BasicCrop-size-500x500.jpg">
+  </li>
+  <li>
+    <img src = "http://www.holidaysplease.co.uk/assets/images/17-85-japan%203.jpg-BasicCrop-size-500x500.jpg">
+  </li>
+  <li>
+    <img src = "http://www.holidaysplease.co.uk/assets/images/17-85-japan%203.jpg-BasicCrop-size-500x500.jpg">
+  </li>
+  <li>
+    <img src = "http://www.holidaysplease.co.uk/assets/images/17-85-japan%203.jpg-BasicCrop-size-500x500.jpg">
+  </li>
+</ul>
+</body>
+</html>
+<script
+src="https://code.jquery.com/jquery-3.2.1.js"
+integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+<script>
+
+    $('.slick-codepen').slick({
+        infinite: true,
+        speed: 600,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 900
+    });
+
+    $(".slick-next").hide();
+    $(".slick-prev").hide();
+
+    $(".slick-slide").css("height","300px");
+
+
+
+
+</script>
