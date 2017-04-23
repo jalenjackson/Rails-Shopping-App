@@ -49,7 +49,7 @@ html, body {
     font-size: 1.25em;
     text-decoration: none;
     color: #ffffff;
-    font-weight: 400;
+    font-weight: 300;
     margin-right: 2em; }
 .nav a:hover, .nav label:hover {
     color: #4ad7b1; }
@@ -84,7 +84,7 @@ html, body {
     width: 100%;
     max-width: 100%; }
 .resources li .resource_info {
-    background: rgba(74, 215, 177, 0.85);
+    background: rgba(66,133,244,0.8);
     padding: 2em 10%;
     height: 100%;
     width: 100%;
