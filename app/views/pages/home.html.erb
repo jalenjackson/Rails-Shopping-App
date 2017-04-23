@@ -15,7 +15,7 @@
 </head>
 
 <body class="opac" >
-
+<img style="position: absolute;top: 20px;left:20px; z-index:9999;" height="50" width="50" src = "http://cdn.mysitemyway.com/icons-watermarks/flat-circle-white-on-purple/classica/classica_shopping-cart-4/classica_shopping-cart-4_flat-circle-white-on-purple_512x512.png">
 
 
 <div class="slick-codepen">
@@ -37,12 +37,11 @@
 
 
 <ul class="resources">
-  <% 8.times do |i| %>
 
 <li>
-    <img height="250" src = "https://cdn2.tnwcdn.com/wp-content/blogs.dir/1/files/2016/02/AMAZON-1200x537.png">
+    <img height="250" src = "https://emby.media/img/blog/playstation4-tile.jpg">
     <div class="resource_info">
-      <h2>Example Resource</h2>
+      <h2>Want to buy this item?</h2>
       <p class="price">$22</p>
       <%= form_tag charges_path, id:'chargeForm' do %>
 
@@ -68,8 +67,8 @@
               });
               document.getElementById('btn-buy').addEventListener('click', function(e) {
                   handler.open({
-                      name: 'Learn Rails',
-                      description: 'an new',
+                      name: 'Buy This Item',
+                      description: 'Item description',
                       amount: document.getElementById("amount").value
                   });
                   e.preventDefault();
@@ -78,7 +77,290 @@
       <% end %>
     </div>
   </li>
+
+
+  <li>
+    <img height="250" src = "http://static.trustedreviews.com/94/00002fa41/2227_orh400w600/XboxOne-review-update.jpg">
+    <div class="resource_info">
+      <h2>Want to buy this item?</h2>
+      <p class="price">$22</p>
+      <%= form_tag charges_path, id:'chargeForm' do %>
+
+          <% if flash[:error].present? %>
+              <div id="error_explanation">
+                <p><%= flash[:error] %></p>
+              </div>
+          <% end %>
+
+          <script src="https://checkout.stripe.com/checkout.js"></script>
+          <%= hidden_field_tag 'stripeToken' %>
+          <%= hidden_field_tag 'amount', '$23'%>
+          <%= hidden_field_tag 'stripeEmail' %>
+          <button id="btn-buy" type="button" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>Buy this!</button>
+          <script>
+              var handler = StripeCheckout.configure({
+                  key: 'pk_test_RNgNHbBV8hZuNpX8LSjS2H2y',
+                  token: function(token, arg) {
+                      document.getElementById("stripeToken").value = token.id;
+                      document.getElementById("stripeEmail").value = token.email;
+                      document.getElementById("chargeForm").submit();
+                  }
+              });
+              document.getElementById('btn-buy').addEventListener('click', function(e) {
+                  handler.open({
+                      name: 'Buy This Item',
+                      description: 'Item description',
+                      amount: document.getElementById("amount").value
+                  });
+                  e.preventDefault();
+              })
+          </script>
       <% end %>
+    </div>
+  </li>
+
+
+
+  <li>
+    <img height="250" src = "http://eventsbyfabulous.com/wp-content/uploads/2013/09/samsung-tv-front.jpg">
+    <div class="resource_info">
+      <h2>Want to buy this item?</h2>
+      <p class="price">$22</p>
+      <%= form_tag charges_path, id:'chargeForm' do %>
+
+          <% if flash[:error].present? %>
+              <div id="error_explanation">
+                <p><%= flash[:error] %></p>
+              </div>
+          <% end %>
+
+          <script src="https://checkout.stripe.com/checkout.js"></script>
+          <%= hidden_field_tag 'stripeToken' %>
+          <%= hidden_field_tag 'amount', '$23'%>
+          <%= hidden_field_tag 'stripeEmail' %>
+          <button id="btn-buy" type="button" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>Buy this!</button>
+          <script>
+              var handler = StripeCheckout.configure({
+                  key: 'pk_test_RNgNHbBV8hZuNpX8LSjS2H2y',
+                  token: function(token, arg) {
+                      document.getElementById("stripeToken").value = token.id;
+                      document.getElementById("stripeEmail").value = token.email;
+                      document.getElementById("chargeForm").submit();
+                  }
+              });
+              document.getElementById('btn-buy').addEventListener('click', function(e) {
+                  handler.open({
+                      name: 'Buy This Item',
+                      description: 'Item description',
+                      amount: document.getElementById("amount").value
+                  });
+                  e.preventDefault();
+              })
+          </script>
+      <% end %>
+    </div>
+  </li>
+
+  <li>
+    <img height="250" src = "http://cdn1.knowyourmobile.com/sites/knowyourmobilecom/files/2015/11/new-android-kitkat-update-build-ktu65-spotted-nexus-5.jpg">
+    <div class="resource_info">
+      <h2>Want to buy this item?</h2>
+      <p class="price">$22</p>
+      <%= form_tag charges_path, id:'chargeForm' do %>
+
+          <% if flash[:error].present? %>
+              <div id="error_explanation">
+                <p><%= flash[:error] %></p>
+              </div>
+          <% end %>
+
+          <script src="https://checkout.stripe.com/checkout.js"></script>
+          <%= hidden_field_tag 'stripeToken' %>
+          <%= hidden_field_tag 'amount', '$23'%>
+          <%= hidden_field_tag 'stripeEmail' %>
+          <button id="btn-buy" type="button" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>Buy this!</button>
+          <script>
+              var handler = StripeCheckout.configure({
+                  key: 'pk_test_RNgNHbBV8hZuNpX8LSjS2H2y',
+                  token: function(token, arg) {
+                      document.getElementById("stripeToken").value = token.id;
+                      document.getElementById("stripeEmail").value = token.email;
+                      document.getElementById("chargeForm").submit();
+                  }
+              });
+              document.getElementById('btn-buy').addEventListener('click', function(e) {
+                  handler.open({
+                      name: 'Buy This Item',
+                      description: 'Item description',
+                      amount: document.getElementById("amount").value
+                  });
+                  e.preventDefault();
+              })
+          </script>
+      <% end %>
+    </div>
+  </li>
+
+  <li>
+    <img height="250" src = "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iphone/iphone-6splus-colors.jpg">
+    <div class="resource_info">
+      <h2>Want to buy this item?</h2>
+      <p class="price">$22</p>
+      <%= form_tag charges_path, id:'chargeForm' do %>
+
+          <% if flash[:error].present? %>
+              <div id="error_explanation">
+                <p><%= flash[:error] %></p>
+              </div>
+          <% end %>
+
+          <script src="https://checkout.stripe.com/checkout.js"></script>
+          <%= hidden_field_tag 'stripeToken' %>
+          <%= hidden_field_tag 'amount', '$23'%>
+          <%= hidden_field_tag 'stripeEmail' %>
+          <button id="btn-buy" type="button" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>Buy this!</button>
+          <script>
+              var handler = StripeCheckout.configure({
+                  key: 'pk_test_RNgNHbBV8hZuNpX8LSjS2H2y',
+                  token: function(token, arg) {
+                      document.getElementById("stripeToken").value = token.id;
+                      document.getElementById("stripeEmail").value = token.email;
+                      document.getElementById("chargeForm").submit();
+                  }
+              });
+              document.getElementById('btn-buy').addEventListener('click', function(e) {
+                  handler.open({
+                      name: 'Buy This Item',
+                      description: 'Item description',
+                      amount: document.getElementById("amount").value
+                  });
+                  e.preventDefault();
+              })
+          </script>
+      <% end %>
+    </div>
+  </li>
+
+  <li>
+    <img height="250" src = "http://store.hp.com/wcsstore/hpusstore/Treatment/Spectre_Saf_IrresistibleCarous2.jpg">
+    <div class="resource_info">
+      <h2>Want to buy this item?</h2>
+      <p class="price">$22</p>
+      <%= form_tag charges_path, id:'chargeForm' do %>
+
+          <% if flash[:error].present? %>
+              <div id="error_explanation">
+                <p><%= flash[:error] %></p>
+              </div>
+          <% end %>
+
+          <script src="https://checkout.stripe.com/checkout.js"></script>
+          <%= hidden_field_tag 'stripeToken' %>
+          <%= hidden_field_tag 'amount', '$23'%>
+          <%= hidden_field_tag 'stripeEmail' %>
+          <button id="btn-buy" type="button" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>Buy this!</button>
+          <script>
+              var handler = StripeCheckout.configure({
+                  key: 'pk_test_RNgNHbBV8hZuNpX8LSjS2H2y',
+                  token: function(token, arg) {
+                      document.getElementById("stripeToken").value = token.id;
+                      document.getElementById("stripeEmail").value = token.email;
+                      document.getElementById("chargeForm").submit();
+                  }
+              });
+              document.getElementById('btn-buy').addEventListener('click', function(e) {
+                  handler.open({
+                      name: 'Buy This Item',
+                      description: 'Item description',
+                      amount: document.getElementById("amount").value
+                  });
+                  e.preventDefault();
+              })
+          </script>
+      <% end %>
+    </div>
+  </li>
+
+  <li>
+    <img height="250" src = "http://www.laptopmag.com/images/uploads/4758/g/apple-macbook-2016-nw-g03.jpg">
+    <div class="resource_info">
+      <h2>Want to buy this item?</h2>
+      <p class="price">$22</p>
+      <%= form_tag charges_path, id:'chargeForm' do %>
+
+          <% if flash[:error].present? %>
+              <div id="error_explanation">
+                <p><%= flash[:error] %></p>
+              </div>
+          <% end %>
+
+          <script src="https://checkout.stripe.com/checkout.js"></script>
+          <%= hidden_field_tag 'stripeToken' %>
+          <%= hidden_field_tag 'amount', '$23'%>
+          <%= hidden_field_tag 'stripeEmail' %>
+          <button id="btn-buy" type="button" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>Buy this!</button>
+          <script>
+              var handler = StripeCheckout.configure({
+                  key: 'pk_test_RNgNHbBV8hZuNpX8LSjS2H2y',
+                  token: function(token, arg) {
+                      document.getElementById("stripeToken").value = token.id;
+                      document.getElementById("stripeEmail").value = token.email;
+                      document.getElementById("chargeForm").submit();
+                  }
+              });
+              document.getElementById('btn-buy').addEventListener('click', function(e) {
+                  handler.open({
+                      name: 'Buy This Item',
+                      description: 'Item description',
+                      amount: document.getElementById("amount").value
+                  });
+                  e.preventDefault();
+              })
+          </script>
+      <% end %>
+    </div>
+  </li>
+
+
+  <li>
+    <img height="250" src = "https://cnet4.cbsistatic.com/img/KzFyX55DnnGTu9JDzBQ2sNcuR-w=/300x250/2016/11/08/9d20e7b1-7da0-4f1b-a620-7ee9042b0049/lg-v20-6334-001-min.jpg">
+    <div class="resource_info">
+      <h2>Want to buy this item?</h2>
+      <p class="price">$22</p>
+      <%= form_tag charges_path, id:'chargeForm' do %>
+
+          <% if flash[:error].present? %>
+              <div id="error_explanation">
+                <p><%= flash[:error] %></p>
+              </div>
+          <% end %>
+
+          <script src="https://checkout.stripe.com/checkout.js"></script>
+          <%= hidden_field_tag 'stripeToken' %>
+          <%= hidden_field_tag 'amount', '$23'%>
+          <%= hidden_field_tag 'stripeEmail' %>
+          <button id="btn-buy" type="button" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>Buy this!</button>
+          <script>
+              var handler = StripeCheckout.configure({
+                  key: 'pk_test_RNgNHbBV8hZuNpX8LSjS2H2y',
+                  token: function(token, arg) {
+                      document.getElementById("stripeToken").value = token.id;
+                      document.getElementById("stripeEmail").value = token.email;
+                      document.getElementById("chargeForm").submit();
+                  }
+              });
+              document.getElementById('btn-buy').addEventListener('click', function(e) {
+                  handler.open({
+                      name: 'Buy This Item',
+                      description: 'Item description',
+                      amount: document.getElementById("amount").value
+                  });
+                  e.preventDefault();
+              })
+          </script>
+      <% end %>
+    </div>
+  </li>
 </ul>
 </body>
 </html>

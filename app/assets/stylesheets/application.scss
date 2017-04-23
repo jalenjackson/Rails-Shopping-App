@@ -12,7 +12,12 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
+
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 
 * {
@@ -41,6 +46,14 @@ html, body {
     font-size: 3em;
     line-height: 1;
     font-weight: lighter !important; }
+
+#btn-buy {
+  background: rgb(41,93,204);
+  border: none;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+}
 
 .nav {
     background: #3367d6; }
