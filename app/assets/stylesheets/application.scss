@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+
  *= require font-awesome
 
  */
@@ -55,6 +56,14 @@ html, body {
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
 }
 
+h2{
+  font-family: 'lato', sans-serif;
+  font-weight:lighter;
+}
+button{
+  font-family:'lato',sans-serif;
+  font-weight:lighter;
+}
 .nav {
     background: #3367d6; }
 .nav a, .nav label {

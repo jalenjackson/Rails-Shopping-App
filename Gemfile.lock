@@ -40,6 +40,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
+    alertify-rails (0.2.0)
     arel (8.0.0)
     autoprefixer-rails (6.7.7.1)
       execjs
@@ -190,6 +191,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  alertify-rails
   bootstrap-sass
   byebug
   capybara (~> 2.13.0)
