@@ -1,3 +1,3 @@
 # README
 
-https://shoppingg-app-ruby.herokuapp.com/
+Live on Heroku https://shoppingg-app-ruby.herokuapp.com/
